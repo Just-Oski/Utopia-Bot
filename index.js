@@ -6,6 +6,7 @@ client.config = require('./bot');
 client.on('ready', () => {
     guildMemberAdd(client)
     console.log('Ja być gotowy')
+    client.user.setActivity('nowe osoby.', { type: 'WATCHING' });
     })
 
 client.login(client.config.discord.token);
